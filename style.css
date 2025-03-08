@@ -42,12 +42,16 @@ table tr td:last-child {
 
 /* Nur innere Linien anzeigen */
 td {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   text-align: center;
   font-size: 32px;
 
   cursor: pointer;
+}
+
+td:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Farben für Symbole */
