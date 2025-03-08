@@ -179,3 +179,24 @@ function generateCrossSVG() {
 `;
   return svg;
 }
+
+function restartGame() {
+  resetFields();
+  resetPlayerToCross();
+  resetGameStatus();
+  render();
+}
+
+function resetFields() {
+  for (let index = 0; index < fields.length; index++) {
+    fields[index] = null;
+  }
+}
+
+function resetPlayerToCross() {
+  currentPlayer = "cross";
+}
+
+function resetGameStatus() {
+  gameOver = false;
+}

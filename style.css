@@ -62,3 +62,7 @@ td:hover {
 .cross {
   color: #e74c3c;
 }
+
+.restart-btn {
+  margin-top: 24px;
+}
