@@ -85,8 +85,8 @@ function generateLineSVG(startX, startY, endX, endY) {
   const rect = table.getBoundingClientRect(); // Größe und Position der Tabelle holen
 
   // Berechnung der Position relativ zum Viewport
-  const topOffset = rect.top + window.scrollY;
-  const leftOffset = rect.left + window.scrollX;
+  const topOffset = rect.top;
+  const leftOffset = rect.left;
 
   const svg = `
 <svg width="${rect.width}" height="${rect.height}" 
@@ -162,7 +162,7 @@ function generateCrossSVG() {
       <animate 
           attributeName="stroke-dashoffset"
           from="73.5" to="0"
-          dur="0.25s"
+          dur="0.15s"
           fill="freeze"
           begin="0.1s" />
   </line>
